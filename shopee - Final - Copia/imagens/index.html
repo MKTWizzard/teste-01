@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    
+        <div class="links">
+            <div style="display: flex; align-items: center; margin-left: 50px;">
+                <div class="link1">central do vendedor</div>
+                <div class="divisao"></div>
+                <div class="link1">vender na shopee</div>
+                <div class="divisao"></div>
+                <div class="link1">Baixe o app</div>
+                <div class="divisao"></div>
+                <div class="link1">Siga-nos no </div>
+            </div>
+
+            <div style="display: flex; align-items: center; margin-left: -400px;">
+                <div class="link1">notificaçõesr</div>
+                <div class="divisao"></div>
+                <div class="link1">ajuda</div>
+                <div class="divisao"></div>
+                <div class="link1">Português-BR</div>
+                <div class="divisao"></div>
+                <div class="link1">cadastrar</div>
+                <div class="divisao"></div>
+                <div class="link1">entrar</div>
+            </div>
+
+        </div>
+        <div class="shopee"> 
+            <img src="imagens/shopee-logooo.png" alt="" style="height: 50px; width: 150px; margin-top: -8px; margin-left: 200px;">
+            <div class="searchbarpai" >
+                <input type="text" class="searchbar" placeholder="   Buscar na Shopee">
+                <button type="button" class="searchbutton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="lupa"><path fill="#f5f5f5" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+            </div>
+            <div class="carrinho"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="carr"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></div>
+
+        </div>
+
+          <div class="pageproduct" >
+              <div class="container">
+                
+                <div class="produto">
+                    
+                    <div class="product-container">
+                        <div class="product">
+                            <!-- Imagem Principal -->
+                            <img src="imagens/panela1.webp" alt="Produto 1" class="product-main-image">
+                            
+                            <!-- Carrossel de Miniaturas -->
+                            <div class="thumbnails-carousel">
+                                <button class="prev" onclick="scrollThumbnails(-1)">&#10094;</button>
+                                <div class="thumbnails-wrapper">
+                                    <div class="thumbnails">
+                                        <img src="imagens/panela1.webp" alt="Produto 1 - Imagem 1" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela2.webp" alt="Produto 12- Imagem 2" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela3.webp" alt="Produto 13 - Imagem 3" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela4.webp" alt="Produto 14 - Imagem 4" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela5.webp" alt="Produto 15 - Imagem 5" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela6.webp" alt="Produto 16 - Imagem 6" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela7.webp" alt="Produto 17- Imagem 7" class="thumbnail" onmouseover="changeMainImage(this)">
+                                        <img src="imagens/panela8.webp" alt="Produto 18 - Imagem 8" class="thumbnail" onmouseover="changeMainImage(this)">
+                                    </div>
+                                </div>
+                                <button class="next" onclick="scrollThumbnails(1)">&#10095;</button>
+                            </div>
+                         </div>
+                </div>
+
+                <div class="compartilhar">
+                    <div>compartilhar:</div>
+                    <div>
+                        <button class="facebook"><img src="imagens/facebook.jpeg" alt="" class="face"></button>
+                        <button class="facebook"><img src="imagens/messenger.jpeg" alt="" class="face"></button>
+                        <button class="facebook"><img src="imagens/WhatsApp.svg.png" alt="" class="wpp"></button>
+                    </div>
+
+                    <div class="divisao2"></div>
+
+                    <div class="favoritar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="coracao"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ee4d2d" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></div>
+
+                    <div class="divfav">favoritar
+                        <div>(13,28mil)</div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+                
+
+                <div class="infoproduto">
+                    
+                    <div class="tituloproduto">
+                        <img src="imagens/oficial.svg" alt="" style="height: 16px; width: 46px;">
+                        <span class="nomeproduto">Conjunto Antiaderente Quadrado Frigideiras Caneco Panela de pressão 10 Peças Patolux</span>    
+                    </div>
+                
+                    <div class="avaliacao">
+                    <div>4.8</div>
+                    <div>
+                        <img src="imagens/estrela.svg" alt="">
+                        <img src="imagens/estrela.svg" alt="">
+                        <img src="imagens/estrela.svg" alt="">
+                        <img src="imagens/estrela.svg" alt="">
+                        <img src="imagens/estrela.svg" alt="">
+                    </div>
+                    <div class="divisao3"></div>
+                    <div class="numeoravaliacoes">28,8mil </div>
+                    <div class="avaliacoes">Avaliações</div>
+                    <div class="divisao3"></div>
+                    <div class="numeorvendidos">50,7mil </div>
+                    <div class="vendidos">vendidos</div>
+                    <div class="denunciar">denunciar</div>
+                </div>
+                
+                <div class="preco">
+                    <div class="valorantigo"><s>R$1.180,90</s></div>
+                    <div class="valorpromo">R$180,90</div>
+                </div>    
+                
+                <div class="pagamento">
+                    <div class="cartao">Cartão de <p></p>
+                    Credito
+                    </div>
+                    <div class="vezes12">12x R$15,70</div>
+                    <button type="button" onclick="Mudarestado('minhaDiv')" class="opipagamento">Opções de Parcelamento</button>
+                </div>
+
+
+                <div class="pagamento">
+                    <div class="frete">Frete </div>
+                        <div class="fretepara">Frete para</div>
+                        <div class="cep">CEP</div>
+                </div>
+                
+                <div class="fretevalor">
+                    <div>
+                        frete
+                    </div>
+
+                    <div class="valorfrete">
+                        <s>R$10,83</s>
+                        <div>R$00,00</div>
+                    </div>
+
+                </div>
+                
+                <div class="cor">
+                    <div class="cornome">COR</div>
+                    <button class="cor1" onclick="scrollThumbnails(-1)" > <img src="imagens/panela1.webp" alt=""  class="imgbutton" onmouseover="changeMainImage(this)">Preto</button>
+                    <button class="cor2">vermelho</button>
+                    <button class="cor2">Cereja</button>
+                    <button class="cor2">Cobre</button>
+                    <button class="cor2">Bronze</button>
+                </div>
+
+                <div class="quantidade">
+
+                    <div class="quantidadepeca">quantidade</div>
+
+                    <div class="quantity-container">
+                        <button onclick="decrease()" class="diminuir">-</button>
+                        <input type="text" id="quantity" value="1" readonly class="resultado">
+                        <button onclick="increase()" class="aumentar">+</button>
+                    </div>
+
+                    <div class="pecadisponivel">1 peça disponivel</div>
+
+                </div>
+
+                <div class="comprapai">
+
+                    <button class="carrinhocompra">Adicionar ao Carrinho</button>
+                    <button class="comprafilho">Comprar Agora</button>
+
+                </div>
+
+
+               
+                
+                </div>   
+
+
+                <div id="minhaDiv" class="parcelamentodiv"> 
+                    <table >
+                        <tr class="linha1"></tr>
+                        <tr class="linha1">
+                            <td>
+                                <span>1x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td class="linha1">
+                                <span>2x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td class="linha1">
+                                <span>3x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>4x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>4x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>5x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>6x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>7x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>8x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>9x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>10x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>11x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>12x</span>
+                                <span>1.180,90</span>
+                            </td>
+                            <td>1.180,90</td>
+                        </tr>
+                    </table>
+
+                    
+                    <button type="button" onclick="Mudarestado('minhaDiv')">fechar</button>
+                </div>
+
+    
+
+                </div>
+
+                <div class="infoloja">
+                    <div class="filholoja" >
+
+                        <div>
+                            <div><img src="imagens/logoloja.webp" alt=""></div>
+                        </div>
+    
+                        <div class="funloja">
+                        
+                        <div>nome loja</div>
+                        <div>ultimo login</div>
+    
+                        <div class="buttonloja">
+                            <button class="conversar"> Conversar Ag...</button>
+                            <button class="verpagina"> Ver Página Da...</button>
+                        </div></div>
+
+
+                    </div>
+                    
+                    
+                    <div class="filholoja2" >
+
+                        <div class="lin1">
+                            <div class="avalc">
+                                <label for="user" class="lbl">Avaliações<span class="spn1">28,8 mil</span></label>
+                            </div>
+                            <div class="repchat">
+                                <label for="user" class="lbl">Taxa de respostas do chat<span class="spn2">80%</span></label>
+                            </div>
+                            <div class="anosdeloja">
+                            <label for="user" class="lbl">Loja Shopee desde<span class="spn3">4 anos</span></label>
+                        </div>
+                        </div>
+                        
+
+                        <div class="lin2">
+                            <div class="prd">
+                                <label for="user" class="lbl">Produtos<span class="spn4">28,8 mil</span></label>
+                            </div>
+                            <div class="repchat2">
+                                <label for="user" class="lbl">Geralmente respode o <span class="spn5">Poucas horas</span> <p></p> Chat em</label>
+                            </div>
+                            <div class="segloja">
+                            <label for="user" class="lbl">Seguidores<span class="spn6"> 9,2 mil</span></label>
+                        </div>
+                        </div>
+
+                    </div>
+
+                        
+                    
+
+                    </div>
+
+
+                <div class="infoprod" >
+
+                    <section class="sec1">
+                        <h2 class="h21" >Detalhe do Produto</h2>
+                        <div class="divsec1">
+                            <div class="categoriashopee">
+                                <div>
+                                    Categoria
+                                </div>
+                                <div class="cat1">
+                                    shopee <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="arrow"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                                </div>
+                                <div> 
+                                    casa e construção <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="arrow"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                                </div>
+                                <div>
+                                    Artigos de Cozinha <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="arrow"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                                </div>
+                                <div>
+                                    Panelas
+                                </div>
+                            </div>
+                            <div class="estoqueshopee">
+                                <div>
+                                    Estoque
+                                </div>
+                                <div class="cat2">
+                                    6
+                                </div>
+                            </div>
+                            <div class="evioshopee">
+                                <div>
+                                    Envio De
+                                </div>
+                                <div class="cat1">
+                                    Distrito Federal
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sec2">
+                        <h2 class="h21" >Descrição do Produto</h2>
+                        <div style="margin: 30px 15px 15px 15px;    width: 1120px;">
+                            <div  class="estilotexto">
+                                <p class="paragrafo">
+                                    Conjunto Antiaderente Quadrado Com Tampa De Vidro Patolux 10 peças, 4 Espatulas antirrisco
+        
+                                    A nova linha de panelas quadradas antiaderente da Patolux chegou para inovar sua cozinha.
+                                    Além de um design arrojado traz um charme especial com os cantos arredondados e o encaixe perfeito das panelas do seu fogão.
+                                    Possui uma estrutura em alumínio 100% puro que garante o aquecimento por inteiro dos alimentos além de manter a temperatura e um cozimento 
+                                    por igual proporciona também economia de gás.
+                                    Com alças, cabos e pegadores antitérmicos permitindo o seu conforto ao manuseio projetados para garantir a segurança e a praticidade..
+                                     
+                                    ORIENTAÇÕES ANTES DO USO:
+                                    --antes do primeiro uso a panela deve ser lavada com esponja macia e sabão neutro ou detergente líquido e enxugada com pano seco. 
+                                    Depois, a parte interna deve ser untada com óleo ou gordura e levada ao fogo baixo por um ou dois minutos. Quando esfriar,lave-a e enxugue-a novamente.
+                                    Ao utilizar o produto no fogão a gás, a chama não deve alcançar a lateral da panela, para maior durabilidade do acabamento externo.
+                                    --Ao lavar o produto, evite a utilização de esponjas abrasivas, saponáceos e produtos à base de cloro, já que elas podem riscar ou remover essa camada.
+                                     
+                                    O que vem nesse produto:
+                                    1 Caçarola n° 15 – diagonal 169 MM – 1,5 Litros
+                                    1 Caçarola n° 17 – diagonal 195 MM – 2,0 Litros
+                                    1 Caçarola n° 19 – diagonal 218 MM – 2,8 Litros
+                                    1 Caçarola n° 21 – diagonal 244 MM – 3,4 Litros
+                                    1 Caçarola n° 23 – diagonal 269 MM – 4,5 Litros
+                                    1 Frigideira Wok Duas Alças n°29 - diagonal 330 MM - 5,1 Litros
+                                    1 Caneco n°15 - diagonal 169 MM - 2,1 Litros
+                                    1 Frigideira Wok n°29 - diagonal 330 MM - 5,1 Litros
+                                    1 Frigideira n°23 - 269 MM - 2,7 Litros
+                                    1 Panela De Pressão - 5,0 Litros -2 Válvulas De Proteção
+                                     
+                                    Ficha Técnica: 
+                                    Tampas de vidro temperado com bordas de aço inox e Cabo plástico isolante do calor
+                                    Alumínio com revestimento interno e externo de antiaderente
+                                    Escape de vapor nas tampas
+                                    Confeccionadas com os padrões de qualidade  NBR 11823.
+                                    -Espessura do alumínio 1,80 mm
+                                    -Confeccionadas com os padrões de qualidade INMETRO 006134-2019
+                                    -Acabamento De Alta Qualidade
+                                    -Cabo plástico isolante do calor
+                                    -Antiaderente MasterFlon Clear Coat
+                                    -Em Alumínio Grosso
+                                    -Super resistente e Extra Forte
+                                    -Cozinha 15% Mais Rápido.
+                                    -Cozinha Mais Saudavel e Minima Quantidade De Óleo.
+                                    -Facil De Limpar.
+                                     
+                                    OBS: ATENÇÃO!!! Esse produto não é indicado para fogões de indução.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>    
+                    
+                <div class="comentario">
+
+                    <div class="avproduto">Avaliação do Produto</div>
+                    
+                    <div class="funccomentario">
+
+                        <div class="ratting">
+                            <div>
+                                <span>5</span> <span>de 5</span>
+
+                                <div> <img src="imagens/estrela.svg" alt="">
+                                    <img src="imagens/estrela.svg" alt="">
+                                    <img src="imagens/estrela.svg" alt="">
+                                    <img src="imagens/estrela.svg" alt="">
+                                    <img src="imagens/estrela.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="rattingbutton">
+
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+                            <button class="buttonratting">ola</button>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                </div>
+
+
+          </div>
+             
+            
+           
+
+
+        </div>
+                
+        </div>
+</body>
+</html>
